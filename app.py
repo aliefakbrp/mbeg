@@ -66,7 +66,7 @@ st.write(input_df)
 # Reads in saved classification model
 # load_clf = joblib.load('clf.pkl')
 load_clf = pickle.load(open('classifier.pkl', 'rb'))
-load_clf = pickle.load(open('https://github.com/aliefakbrp/mbeg/blob/main/clf.pkl', 'rb'))
+# load_clf = pickle.load(open('https://github.com/aliefakbrp/mbeg/blob/main/clf.pkl', 'rb'))
 
 # Apply model to make predictions
 prediction = load_clf.predict(df)
