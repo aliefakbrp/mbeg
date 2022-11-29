@@ -50,7 +50,7 @@ input_df = user_input_features()
 
 # Combines user input features with entire dataset
 # This will be useful for the encoding phase
-heart_dataset = pd.read_csv('dataheartdisease19.csv')
+heart_dataset = pd.read_csv('https://raw.githubusercontent.com/aliefakbrp/mbeg/main/dataheartdisease19.csv')
 heart_dataset = heart_dataset.drop(columns=['HeartDisease'])
 
 df = pd.concat([input_df,heart_dataset],axis=0)
